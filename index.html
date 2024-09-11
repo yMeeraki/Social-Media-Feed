@@ -1,0 +1,135 @@
+ <!DOCTYPE html>
+
+ <html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Social Media Feed</title>
+        <link href = "stylesheet.css" rel="stylesheet">
+
+
+        <!--For icons-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    </head>
+    <body>
+        
+        <div id = "container">
+
+            <!--Sidebar Section Structure-->
+            <section id ="sidebar-section">
+
+                <h3 style="color: aliceblue; padding-left: 45px;">LOGO</h3>
+            
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="index.html"><i class="material-icons md-18" style="color:#f5f0f0;">home</i> Home</a>                  
+                        </li>
+                        <li>
+                            <a href="#"><i class="material-icons md-18" style="color:#f5f0f0;">search</i> Explore</a>                  
+                        </li>
+                        <li>
+                            <a href="#"><i class="material-icons md-18" style="color:#f5f0f0;">notifications_none</i> Notifications</a>                  
+                        </li>
+                        <li>
+                            <a href="#"><i class="material-icons md-18" style="color:#f5f0f0;">mail_outline</i>Message</a>                  
+                        </li>
+                        <li>
+                            <a href="#"><i class="material-icons md-18" style="color:#f5f0f0;">bookmark_border</i>Bookmark</a>                  
+                        </li>
+                        <li>
+                            <a href="#"><i class="material-icons md-18" style="color:#f5f0f0;">people_outline</i>Communities</a>                  
+                        </li>
+                        <li>
+                            <a href="#"><i class="material-icons md-18" style="color:#f5f0f0;">person_outline</i>Profile</a>                  
+                        </li>
+                        <li>
+                            <a href="#"><i class="material-icons md-18" style="color:#f5f0f0;">more</i>More</a>                  
+                        </li>
+
+                        <li>
+                            <button type="submit" id="sidebar-section-post-btn">Post</button>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+
+            <!-- Main Content Section Structure-->    
+            <section id="main-content">
+                <div id = "main-content-tabs">
+                    <button  id = "tab" onclick="openpage('for-you',this)">For you</button>
+                    <button  id = "tab" onclick="openpage('following',this)">Following</button>
+                </div>
+
+                <div id="for-you">
+                    <div id="post-box">
+                        <textarea type="text" placeholder="What is happening?!"></textarea>
+                        <button type ="submit" id="post-btn">Post</button>
+                    </div>
+
+                    <div id="feeds">
+                        <div id="tweet">
+                            <h4 id="tweet-heading">John Doe <span>@johndoe · Sep 7</span></h4>
+                            <p id="tweet-content">Excited to announce that our team is launching a new web development bootcamp this fall!</p>
+                            <p id="tweet-content">We'll be covering HTML, CSS, JavaScript, and more advanced topics to help aspiring developers get job-ready. Sign up now!</p>
+                            <img id="tweet-imag" src="bootcamp_launch.png" alt="Web Development Bootcamp Image">
+                            <div id="tweet-stats">
+                                <span>45 Comments</span>
+                                <span>20 Share</span>
+                                <span>610 Likes</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div id="following">
+                    <div id="tweet">
+                        <h4>Jane Smith <span>@janesmith · Sep 5</span></h4>
+                        <p>Just finished an amazing workshop on React! Learned so much about building reusable components and optimizing performance.</p>
+                        <p>Highly recommend it to anyone looking to improve their front-end skills.</p>
+                        <img id="tweet-imag" src="react_workshop.png" alt="React Workshop Image">
+                        <div id="tweet-stats">
+                            <span>50 Comments</span>
+                            <span>25 Share</span>
+                            <span>670 Likes</span>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+    
+            <!-- Trending Section Structure-->   
+            <section id="trending-section">
+                <div id="search-trend">
+                    <label for="search"><i class="material-icons" >search</i></label>
+                    <input id="search" type="search" placeholder="Search">
+                </div>
+
+                <div id="trending-list">
+                    <h2>What's happening</h2>
+                    <ul>
+                        <li>
+                            <p>Trending</p>
+                            <h3>#Bangalore</h3>
+                            <p>12.3K posts</p>
+                        </li>
+                        <li>
+                            <p>Travel-Trending</p>
+                            <h3>#TrainAccident</h3>
+                        
+                        </li>
+                        <li>
+                            <p>Science-Trending</p>
+                            <h3>#SunitaWilliams</h3>
+                        </li>
+                        <li>
+                            <p>Trending in India</p>
+                            <h3>#DevaraTrailer</h3>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+
+    </body>
+ </html>

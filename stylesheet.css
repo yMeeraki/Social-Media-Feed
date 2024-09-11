@@ -1,0 +1,291 @@
+body{
+   background-color: black;
+}
+
+#container{
+    background-color:black;
+    
+    display:flex;
+    height: 100%;
+    overflow-y: auto;
+ }
+ /*---------------------------------------------*/
+
+ /*Side bar*/
+
+#sidebar-section{
+    
+    padding: 20px;
+    display:flex;
+    flex-direction: column;
+    flex-basis: 20%; 
+    
+    
+    
+ }
+
+ #sidebar-section li{
+   
+   padding-bottom: 25px;
+   color: white;
+   font-size: 22px;
+   
+    
+   margin-bottom: 0px;
+
+   
+ }
+
+#sidebar-section li a{
+   display: flex;
+   text-align: center;
+   text-decoration: none; 
+   color: white; 
+    
+}
+
+#sidebar-section li a i{
+   margin-right: 18px;
+
+}
+
+li .active{
+   font-weight: bold;
+}
+
+#sidebar-section li a:hover{
+   color: #818181;
+   cursor: pointer;
+}
+
+#sidebar-section-post-btn{
+   border: none;
+   border-radius: 100px;
+   width:190px;
+   text-align: center;
+   height: 50px;
+   color: white;
+   background-color: #1da1f2;
+   font-weight: bold;
+   font-size: 16px;
+   cursor: pointer;
+}
+
+.button:hover{
+   background-color: rgb(8, 8, 73);
+}
+
+ /*---------------------------------------------*/
+ /* Main Content */
+
+ #main-content{
+    
+    padding: 20px;
+    color: #fffbfb;
+    display:flex;
+    flex-direction: column;
+    flex: 1;
+    border-right: 1px solid #253341;
+    border-left: 1px solid #253341;
+ }
+
+ /* Stylling of buttons*/
+
+ #main-content-tabs {
+   display: flex;
+   
+   
+   align-items: stretch;
+   justify-content: space-between;
+   width: 100%; 
+   
+   
+ }
+ 
+ #tab {
+   background-color: black;
+   padding: 10px;
+   font-size: 16px;
+   
+   border:1px solid #253341;
+   color: white;
+   cursor: pointer;
+   flex-grow: 1; 
+   text-align: center; 
+   
+ }
+
+ #tab:last-child {
+   margin-right: 0; 
+ }
+
+ #tab:hover {
+   background-color: #1a2a30; 
+ }
+ 
+ #tab:active {
+   background-color: #0f1a20;
+   
+ }
+
+ 
+
+/* Styling for the Post Box */
+#post-box {
+   background-color: #192734;
+   padding: 20px;
+   
+   margin-bottom: 20px;
+   display: flex;
+   align-items: flex-start; 
+   gap: 10px; 
+}
+
+#post-box textarea {
+   flex-grow: 1;
+   background-color: #253341;
+   border: none;
+   border-radius: 10px;
+   padding: 10px;
+   color: white;
+   resize: none;
+   height: 60px; 
+}
+
+#post-btn {
+   background-color: #1da1f2;
+   color: white;
+   border: none;
+   padding: 10px 20px;
+   border-radius: 20px;
+   cursor: pointer;
+   height: 40px; 
+   align-self: center; 
+}
+
+/* Styling for the feeds */
+#feeds {
+   display: flex;
+   flex-direction: column;
+   
+   background-color: black;
+
+}
+
+#tweet{
+   background-color: black;
+   margin-bottom: 10px;
+   
+   align-content: center;
+   border: none;
+   border-top: 1px solid #253341;
+}
+
+#tweet span{
+   color:#8ea7c0;
+}
+
+#tweet-imag{
+   border: none;
+   border-radius: 10px;
+   width: 600px;
+}
+
+#tweet-stats{
+   display: flex;
+   flex-basis: 33.33%;
+   margin-top: 5px;
+}
+
+#tweet-stats span{
+   color:#8ab9e7;
+   margin-left:100px;
+}
+
+
+ /*---------------------------------------------*/
+ /* trending section */
+
+ #trending-section{
+   
+   
+    flex-direction: column;
+    display:flex;
+    color:white;
+    flex-basis: 25%; 
+    align-items: left;
+    padding: 10px;
+    align-items: stretch;
+    
+ }
+
+ /*Styling for search trend*/
+
+ #search-trend i{
+   color:#f5f0f0; 
+   background-color:#253341; 
+   font-size: 24px;
+   padding: 10px 0px 10px 10px;
+   border-top-left-radius: 20px;
+   border-bottom-left-radius: 20px;
+ }
+
+ #search-trend{
+
+   
+   margin-bottom: 30px;
+   
+   display:flex;
+   
+
+ }
+
+ #search{
+   flex-grow: 1;
+   background-color: #253341;
+   border: none;
+   border-top-right-radius: 20px;
+   border-bottom-right-radius: 20px;
+   color: white;
+ }
+
+
+
+ #trending-list{
+
+   display: block;
+   text-align: left;
+   padding: 10px;
+   border: 1px solid #1a2a30;
+   border-radius: 20px;
+   
+ }
+ #trending-list h2{
+   padding-left: 30px;
+ }
+
+ #trending-list li {
+   border-bottom: 1px dotted #192734;
+   margin-bottom: 10px;
+   text-align: left; 
+   display: flex; 
+   flex-direction: column; 
+   align-items: flex-start; 
+   
+ }
+
+ #trending-list li p{
+   color: #8ab9e7;
+ }
+
+
+
+
+/* Common styling*/
+
+
+ li{
+   list-style-type: none; 
+   padding: 0; 
+   margin: 0; 
+ }
